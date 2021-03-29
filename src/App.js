@@ -43,9 +43,6 @@ export default function App() {
           <div className="todo">
             <span className="todo-text">Learning React</span>
           </div>
-          <div className="todo">
-            <span className="todo-text">Learning React</span>
-          </div>
         </section>
       </div>
     </div>
