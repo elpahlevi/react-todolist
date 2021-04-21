@@ -22,7 +22,6 @@ export const button = ({ color, align, theme }) => {
     font-family: "Bungee", sans-serif;
     color: ${textColor};
     text-align: ${align};
-    width: 24%;
     padding: 16px;
     cursor: pointer;
     background: unset;
