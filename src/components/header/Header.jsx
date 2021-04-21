@@ -1,5 +1,4 @@
-/** @jsxImportSource @emotion/react */ // add this on the first line if you want to use emotion css and replace react
-// import React from "react";
+/** @jsxImportSource @emotion/react */
 import PropTypes from "prop-types";
 import { useTheme } from "@emotion/react";
 
@@ -7,7 +6,6 @@ import Button from "../button/ButtonNoJSX";
 import Container from "../../layout/Container";
 import Item from "../../layout/Item";
 
-// import styles from "./header.module.css";
 import * as styles from "./header.styles";
 
 const Header = ({ showAddToggle, showAdd, clearTodos }) => {
