@@ -2,8 +2,9 @@ import React, { useState } from "react";
 
 import Paper from "../components/paper/PaperClass";
 import Header from "../components/header/HeaderClass";
-import TodoForm from "../components/todoForm/TodoForm";
+import TodoForm from "../components/todoForm/TodoFormClass";
 import Todos from "../components/todos/Todos";
+
 import Container from "../layout/Container";
 
 const TodoList = () => {
