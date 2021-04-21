@@ -1,11 +1,5 @@
 import { css } from "@emotion/react";
 
-export const header = () =>
-  css`
-    display: flex;
-    align-items: flex-start;
-  `;
-
 export const headerTitle = (theme) =>
   css`
     text-align: center;
