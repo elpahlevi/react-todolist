@@ -1,19 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Paper from "../components/paper/Paper";
 import Container from "../layout/Container";
+import AboutContent from "../components/aboutContent/AboutContent";
 
 const About = () => {
   return (
     <Paper>
       <Container
-      // flexDirection="column"
-      // justifyContent="space-between"
-      // height="100%"
-      />
-      <h1>This is about page</h1>
-      <Link to="/">Pergi ke halaman home</Link>
+        flexDirection="column"
+        justifyContent="space-between"
+        height="100%"
+      >
+        <AboutContent />
+      </Container>
     </Paper>
   );
 };
