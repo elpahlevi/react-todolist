@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Todo from "../todo/TodoClass";
+import Todo from "../todo/Todo";
 import Container from "../../layout/Container";
 import Item from "../../layout/Item";
 

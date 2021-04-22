@@ -23,7 +23,8 @@ const AboutContent = () => {
               create front-end content and emphasize my writing skills in
               JavaScript. I also learn how to use external package to make this
               app more scalable such as Emotion CSS and React Router. Thanks to
-              Wegodev by providing this cool course. Let's have try, Thank You!.
+              Wegodev by providing this cool course. Let's have a try, Thank
+              You!.
             </p>
           </Container>
         </Item>

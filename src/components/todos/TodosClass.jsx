@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 import Todo from "../todo/TodoClass";
-import Container from "../../layout/Container";
+import Container from "../../layout/ContainerClass";
+import Item from "../../layout/ItemClass";
 
 const StyledTodoPlaceholderText = styled.div`
   font-family: "Homemade Apple", sans-serif;
@@ -15,6 +17,11 @@ const StyledTodoPlaceholderText = styled.div`
 const StyledAddButtonPlaceholderText = styled.span`
   font-family: "Bungee", sans-serif;
   font-size: 24px;
+`;
+
+const StyledSeeAboutPagePlaceholderText = styled.span`
+  font-family: "Bungee", sans-serif;
+  font-size: 18px;
 `;
 
 class Todos extends React.Component {
@@ -36,15 +43,24 @@ class Todos extends React.Component {
               );
             })}
           {todos.length === 0 && (
-            <StyledTodoPlaceholderText>
-              {[
-                "Add todo by clicking ",
-                <StyledAddButtonPlaceholderText>
-                  Add
-                </StyledAddButtonPlaceholderText>,
-                " button on the top of left corner"
-              ]}
-            </StyledTodoPlaceholderText>
+            <React.Fragment>
+              <StyledTodoPlaceholderText>
+                {[
+                  "Add todo by clicking ",
+                  <StyledAddButtonPlaceholderText>
+                    Add
+                  </StyledAddButtonPlaceholderText>,
+                  " button on the top of left corner"
+                ]}
+              </StyledTodoPlaceholderText>
+              <Container justifyContent="center">
+                <Item>
+                  <StyledSeeAboutPagePlaceholderText>
+                    <Link to="/about">Or visit about page</Link>
+                  </StyledSeeAboutPagePlaceholderText>
+                </Item>
+              </Container>
+            </React.Fragment>
           )}
         </Container>
       </section>
