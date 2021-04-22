@@ -1,9 +1,7 @@
 /** @jsxImportSource @emotion/react */
-// import React from "react";
 import PropTypes from "prop-types";
 import { useTheme } from "@emotion/react";
 
-// import styles from "./paper.module.css";
 import * as styles from "./paper.styles";
 
 const Paper = ({ children }) => {
